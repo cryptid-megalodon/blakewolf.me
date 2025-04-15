@@ -1,6 +1,6 @@
 basic_settings:
   site_title: Blake Wolf
-  site_tagline: Blake Wolf's professional landing page.
+  site_tagline: blake (at) blakewolf (dot) me
   favicon_image: /images/favicon.ico
 
 header_settings:
@@ -31,7 +31,7 @@ contact_settings:
 social_settings:
   facebook_url: ''
   twitter_url: ''
-  instagram_url: 'https://www.instagram.com/blakewolf.awooo/'
+  instagram_url: ''
   snapchat_url: ''
   youtube_url: ''
   google-plus_url: ''
@@ -55,7 +55,7 @@ social_settings:
   spotify_url: ''
   bandcamp_url: ''
   linkedin_url: 'https://www.linkedin.com/in/blake-w-192382222/'
-  substack_url: 'https://substack.com/@cryptidmegalodon1'
+  substack_url: ''
 
 color_settings:
   background_color: '#ffffff'
