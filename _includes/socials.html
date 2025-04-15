@@ -1,11 +1,16 @@
 <ul class="socials">
 	{% for url in site.data.settings.social_settings %}
-	{% if url[1] != '' %}
-	<li class="socials__item">
-		<a href="{{ url[1] }}" target="_blank" class="socials__item__link" title="{{ url[0] | remove: '_url' | replace: '-', ' ' | capitalize }}">
-			<i class="fab fa-{{ url[0] | replace: 'facebook', 'facebook-f' | remove: '_url' }}" aria-hidden="true"></i>
-		</a>
-	</li>
-	{% endif %}
+    {% if url[1] != '' %}
+      <li class="socials__item">
+        <a href="{{ url[1] }}" target="_blank" class="socials__item__link" title="{{ url[0] | remove: '_url' | replace: '-', ' ' | capitalize }}">
+          {% if url[0] == 'substack_url' %}
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="currentColor"> {# Added fill="currentColor" #}
+              <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+            </svg>
+          {% else %}
+            <i class="fab fa-{{ url[0] | replace: 'facebook', 'facebook-f' | remove: '_url' }}" aria-hidden="true"></i>
+        </a>
+      </li>
+    {% endif %}
 	{% endfor %}
 </ul>

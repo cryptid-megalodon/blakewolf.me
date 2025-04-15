@@ -55,6 +55,7 @@ social_settings:
   spotify_url: ''
   bandcamp_url: ''
   linkedin_url: 'https://www.linkedin.com/in/blake-w-192382222/'
+  substack_url: 'https://substack.com/@cryptidmegalodon1'
 
 color_settings:
   background_color: '#ffffff'
