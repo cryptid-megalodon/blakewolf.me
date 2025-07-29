@@ -14,6 +14,8 @@ menu_settings:
       url: '/'
     - title: 'Projects'
       url: '/projects/'
+    - title: 'Blog (Substack)'
+      url: 'https://cryptidmegalodon1.substack.com/'
     - title: 'Contact'
       url: '/contact'
 
@@ -48,7 +50,7 @@ social_settings:
   spotify_url: ''
   bandcamp_url: ''
   linkedin_url: 'https://www.linkedin.com/in/blake-w-192382222/'
-  substack_url: ''
+  substack_url: 'https://cryptidmegalodon1.substack.com/'
 
 color_settings:
   background_color: '#ffffff'

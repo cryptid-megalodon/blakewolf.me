@@ -50,6 +50,7 @@ This is Blake Wolf's professional landing page hosted at https://blakewolf.me. T
 - Contact page replaced form with direct contact links (email, GitHub, LinkedIn)
 - Removed unused contact form dependencies (includes, CSS, JavaScript, settings)
 - Fixed critical Sass deprecation warnings (color functions and math operations)
+- Added Substack link to navigation menu and social icons
 
 ## Current Status
 - The home page and about page have been customized with Blake's professional information
@@ -59,9 +60,9 @@ This is Blake Wolf's professional landing page hosted at https://blakewolf.me. T
 - Pagination has been removed from the site
 - Critical Sass deprecation warnings have been resolved (color functions, math operations)
 - Remaining @import deprecation warnings are intentionally left in place for Jekyll theme compatibility
+- Substack blog link added to main navigation and social icons (https://cryptidmegalodon1.substack.com/)
 
 ## Future Considerations
-- Add link to substack for blog posts.
 - Remove or replace demo blog posts and projects with real content
 - Add real projects to showcase
 - Consider differentiating home and about pages or removing redundancy
