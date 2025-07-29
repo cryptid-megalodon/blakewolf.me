@@ -28,7 +28,7 @@ This is Blake Wolf's professional landing page hosted at https://blakewolf.me. T
 - `/` - Home/landing page with about content (index.md)
 - `/projects/` - Automatically generated project portfolio from GitHub repos.
 - `/contact` - Contact page with direct links (no form)
-- `/blog/` - Link out to Substack blog (https://cryptidmegalodon1.substack.com/)
+- `/blog/` - Link out to Substack blog (https://substack.com/@cryptidmegalodon1)
 
 ## Key Files
 - `_config.yml` - Main Jekyll configuration
@@ -42,7 +42,7 @@ This is Blake Wolf's professional landing page hosted at https://blakewolf.me. T
 - Projects page automatically displays GitHub repos with About sections
 - Contact page has been updated to display email, GitHub, and LinkedIn links
 - Pagination has been removed from the site
-- Substack blog link added to main navigation and social icons (https://cryptidmegalodon1.substack.com/)
+- Substack blog link added to main navigation and social icons (https://substack.com/@cryptidmegalodon1)
 
 ## Automated Projects System
 - **GitHub Actions Workflow**: `.github/workflows/update-projects.yml` runs daily at 6 AM UTC
