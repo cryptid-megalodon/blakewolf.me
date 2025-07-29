@@ -47,18 +47,18 @@ This is Blake Wolf's professional landing page hosted at https://blakewolf.me. T
 - Both home and about pages now display identical professional content
 - Menu updated to show "About" instead of "Latest" for the home page
 - Removed pagination configuration and jekyll-paginate plugin
+- Contact page replaced form with direct contact links (email, GitHub, LinkedIn)
 
 ## Current Status
 - The home page and about page have been customized with Blake's professional information
 - Both pages use the same content and portrait image
 - Demo blog posts and projects are still present
-- Contact form is configured but form action is empty
+- Contact page has been updated to display email, GitHub, and LinkedIn links (no form)
 - Pagination has been removed from the site
 
 ## Future Considerations
 - Add link to substack for blog posts.
 - Remove or replace demo blog posts and projects with real content
-- Configure contact form with proper form handler
 - Add real projects to showcase
 - Consider differentiating home and about pages or removing redundancy
 - Consider adding recent blog posts about machine learning journey

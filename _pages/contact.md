@@ -1,10 +1,14 @@
 ---
 title: Contact
-subtitle: Journal comes with a built-in contact form, that's free and easy to set up.
-description: A stunning personal blog Jekyll theme with an image-focused design.
-featured_image: /images/demo/demo-portrait.jpg
+subtitle: Let's connect
+description: Get in touch with Blake Wolf via email, GitHub, or LinkedIn.
+featured_image: /images/blake_bw2.webp
 ---
 
-{% include contact-form.html %}
+I'd love to hear from you! Feel free to reach out through any of the following channels:
 
-We've made a contact form that you can use with [Formspree](https://formspree.io/create/jekyllthemes) to handle up to 50 submissions per month for free. You could also easily switch out the end-point to use another contact form service.
+**Email:** [blake@blakewolf.me](mailto:blake@blakewolf.me)
+
+**GitHub:** [github.com/cryptid-megalodon](https://github.com/cryptid-megalodon)
+
+**LinkedIn:** [linkedin.com/in/blake-w-192382222](https://www.linkedin.com/in/blake-w-192382222/)
