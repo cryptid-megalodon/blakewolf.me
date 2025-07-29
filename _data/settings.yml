@@ -15,7 +15,7 @@ menu_settings:
     - title: 'Projects'
       url: '/projects/'
     - title: 'Blog (Substack)'
-      url: 'https://cryptidmegalodon1.substack.com/'
+      url: 'https://substack.com/@cryptidmegalodon1'
     - title: 'Contact'
       url: '/contact'
 
