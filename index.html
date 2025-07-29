@@ -1,65 +1,36 @@
 ---
-layout: default
-title: About
-description: Blake Wolf's professional landing page.
-featured_image: /images/blake_bw2.webp
+layout: page
+title: About Blake
+subtitle: Builder & Technology Enthusiast
+description: Learn more about Blake Wolf's professional journey and interests.
+featured_image: /images/demo/demo-portrait.jpg
 ---
 
-<section class="blog single">
+## Professional Journey
 
-	<div class="wrap">
-		<article class="blog-post">
+I'm Blake Wolf, a software engineer with a passion for building impactful technology solutions. My career has taken me from leading teams at Google to exploring entrepreneurship in renewable energy, and now diving deep into the world of machine learning.
 
-			<div class="blog-post__header">
-        <h2 class="blog-post__title">About Blake Wolf</h2>
-			<div class="blog-post__content">
-        <p>Former Senior Software Engineer at Google, I led the YouTube Music Event Tickets Team, driving development of data pipelines and features that significantly boosted concert ticket sales. My Google tenure also included pivotal roles in data center infrastructure and enhancing TensorFlow model analysis tools. Since leaving Google, I am taking time to deepen my expertise in machine learning through self-study and personal projects. My goal is to make significant contributions to the machine learning community.</p>
-        <p>Outside of tech, I co-founded a solar farm development company to develop sustainable energy projects. We are now developing our first solar array in California.</p>
-			</div>
+## Experience Highlights
 
-		</article>
-    <!-- Original blog post code:
-		{% for post in paginator.posts %}
+### Google - Senior Software Engineer
+As a Senior Software Engineer at Google, I led the YouTube Music Event Tickets Team, where we built features that connected millions of music fans with live events. I also contributed to critical infrastructure projects, working on data center systems and developing tools for TensorFlow model analysis.
 
-		<article class="blog-post">
+### Entrepreneurial Ventures
+After my time at Google, I co-founded a solar farm development company, combining my technical expertise with a commitment to sustainable energy solutions. This experience taught me valuable lessons about building businesses from the ground up and navigating the renewable energy sector.
 
-			<div class="blog-post__header">
-				<h2 class="blog-post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-				<p class="blog-post__subtitle">{{ post.date | date_to_long_string }}</p>
-			</div>
+## Current Focus
 
-			{% if post.featured_image %}
-			<a href="{{ post.url | relative_url }}" class="blog-post__image" style="background-image: url({{ post.featured_image | relative_url }});"></a>
-			{% endif %}
+I'm currently dedicating my time to self-study in machine learning, exploring the latest developments in AI and working on personal projects that push the boundaries of what's possible with modern ML techniques. This journey has been both challenging and rewarding, allowing me to stay at the forefront of technological innovation.
 
-			<div class="blog-post__content">
-				<p>{{ post.excerpt }}</p>
-				<p><a href="{{ post.url | relative_url }}" class="button">Read More</a></p>
-			</div>
+## Technical Interests
 
-		</article>
+* Machine Learning & Deep Learning
+* Distributed Systems & Infrastructure
+* Software Architecture & Design
+* Renewable Energy Technology
+* Data Analysis & Visualization
+* Health and Longevity Technologies
 
-		{% endfor %}
-    -->
-	</div>
+## Let's Connect
 
-</section>
-
-{% if paginator.total_pages > 1 %}
-
-<section class="pagination">
-
-	{% if paginator.previous_page %}
-	<div class="pagination__prev">
-		<a href="{{ paginator.previous_page_path | relative_url }}" class="button button--large"><i class="fa fa-angle-left" aria-hidden="true"></i> <span>Newer Posts</span></a>
-	</div>
-	{% endif %}
-	{% if paginator.next_page %}
-	<div class="pagination__next">
-		<a href="{{ paginator.next_page_path | relative_url }}" class="button button--large"><span>Older Posts</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-	</div>
-	{% endif %}
-
-</section>
-
-{% endif %}
+I'm always interested in discussing technology, machine learning, and innovative project ideas. Feel free to [reach out](/contact).

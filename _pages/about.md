@@ -1,35 +1,36 @@
 ---
-title: About Journal
-subtitle: A stunning personal blog Jekyll theme with an image-focused design.
-description: A stunning personal blog Jekyll theme with an image-focused design.
+layout: page
+title: About Blake
+subtitle: Builder & Technology Enthusiast
+description: Learn more about Blake Wolf's professional journey and interests.
 featured_image: /images/demo/demo-portrait.jpg
 ---
 
-![](/images/demo/demo-landscape.jpg)
+## Professional Journey
 
-## Features
+I'm Blake Wolf, a software engineer with a passion for building impactful technology solutions. My career has taken me from leading teams at Google to exploring entrepreneurship in renewable energy, and now diving deep into the world of machine learning.
 
-Journal is packed with powerful features to showcase your work:
+## Experience Highlights
 
-* Beautiful, minimal design
-* Fixed sidebar images that animate as you browse
-* Single column post layout
-* Responsive – works perfectly on all devices
-* Portfolio/projects post type to show your work
-* Blog with pagination
-* Sleek Ajax navigation and page transitions
-* Unique 'gallery' feature for image grids and carousels
-* Built-in contact form with Formspree integration
-* Full markdown support and code highlighting
-* Social media icons
-* Fast page rendering
-* Built with SEO best practices in mind
-* Customize everything – colors, spacing, fonts, sizes etc. – via a simple settings file
-* Works with GitHub Pages
-* Updated and supported by the developers
+### Google - Senior Software Engineer
+As a Senior Software Engineer at Google, I led the YouTube Music Event Tickets Team, where we built features that connected millions of music fans with live events. I also contributed to critical infrastructure projects, working on data center systems and developing tools for TensorFlow model analysis.
 
-## Get Index
+### Entrepreneurial Ventures
+After my time at Google, I co-founded a solar farm development company, combining my technical expertise with a commitment to sustainable energy solutions. This experience taught me valuable lessons about building businesses from the ground up and navigating the renewable energy sector.
 
-Journal is created and supported by [Jekyll Themes](https://jekyllthemes.io), and is available for $49.
+## Current Focus
 
-<a href="https://jekyllthemes.io/theme/journal-personal-jekyll-theme" class="button button--large">Get This Theme</a>
+I'm currently dedicating my time to self-study in machine learning, exploring the latest developments in AI and working on personal projects that push the boundaries of what's possible with modern ML techniques. This journey has been both challenging and rewarding, allowing me to stay at the forefront of technological innovation.
+
+## Technical Interests
+
+* Machine Learning & Deep Learning
+* Distributed Systems & Infrastructure
+* Software Architecture & Design
+* Renewable Energy Technology
+* Data Analysis & Visualization
+* Health and Longevity Technologies
+
+## Let's Connect
+
+I'm always interested in discussing technology, machine learning, and innovative project ideas. Feel free to [reach out](/contact).
