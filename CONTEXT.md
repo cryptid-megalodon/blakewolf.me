@@ -66,11 +66,13 @@ This is Blake Wolf's professional landing page hosted at https://blakewolf.me. T
 
 ## Automated Projects System
 - **GitHub Actions Workflow**: `.github/workflows/update-projects.yml` runs daily at 6 AM UTC
-- **Data Source**: Fetches all public repos from cryptid-megalodon GitHub account
+- **Data Source**: Fetches all public repos from cryptid-megalodon GitHub account via GitHub API
 - **Filtering**: Only includes repositories with populated About/description sections
 - **Output**: Creates `_data/github_projects.yml` with alphabetized project list
 - **Display**: `/projects/` page automatically renders bulleted list with repo names, descriptions, and GitHub links
-- **Manual Trigger**: Workflow can be manually triggered via GitHub Actions interface
+- **Manual Trigger**: Workflow can be manually triggered via GitHub Actions web interface at https://github.com/cryptid-megalodon/blakewolf.me/actions
+- **Status**: Workflow committed and deployed, ready for manual or scheduled execution
+- **Testing**: GitHub API connectivity verified, workflow logic confirmed functional
 
 ## Future Considerations
 - Consider adding solar farm project as a manual entry since it may not have a GitHub repo
