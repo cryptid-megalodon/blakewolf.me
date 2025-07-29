@@ -3,7 +3,7 @@ layout: page
 title: About Blake
 subtitle: Builder & Technology Enthusiast
 description: Learn more about Blake Wolf's professional journey and interests.
-featured_image: /images/demo/demo-portrait.jpg
+featured_image: /images/blake_bw2.webp
 ---
 
 ## Professional Journey
