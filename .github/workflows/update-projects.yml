@@ -1,0 +1,85 @@
+name: Update Projects from GitHub
+
+on:
+  schedule:
+    # Run daily at 6 AM UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  update-projects:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch GitHub repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Fetch all repos for the user (assuming cryptid-megalodon based on CONTEXT.md)
+          USER="cryptid-megalodon"
+          
+          # Create projects data directory if it doesn't exist
+          mkdir -p _data
+          
+          # Fetch repos with descriptions and create YAML data file
+          curl -H "Authorization: token $GITHUB_TOKEN" \
+               -H "Accept: application/vnd.github.v3+json" \
+               "https://api.github.com/users/$USER/repos?per_page=100&sort=name" > repos.json
+          
+          # Process repos and create projects data file
+          cat > process_repos.py << 'EOF'
+          import json
+          import yaml
+          from datetime import datetime
+          
+          with open('repos.json', 'r') as f:
+              repos = json.load(f)
+          
+          projects = []
+          for repo in repos:
+              # Only include repos with descriptions (About section)
+              if repo['description'] and repo['description'].strip():
+                  project = {
+                      'name': repo['name'],
+                      'description': repo['description'],
+                      'url': repo['html_url'],
+                      'language': repo['language'],
+                      'stars': repo['stargazers_count'],
+                      'updated': repo['updated_at']
+                  }
+                  projects.append(project)
+          
+          # Sort alphabetically by name
+          projects.sort(key=lambda x: x['name'].lower())
+          
+          # Create data structure for Jekyll
+          data = {
+              'projects': projects,
+              'last_updated': datetime.now().isoformat()
+          }
+          
+          with open('_data/github_projects.yml', 'w') as f:
+              yaml.dump(data, f, default_flow_style=False, sort_keys=False)
+          EOF
+          
+          python3 process_repos.py
+          
+          # Clean up temp files
+          rm repos.json process_repos.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add _data/github_projects.yml
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update GitHub projects data"
+            git push
+          fi

@@ -55,16 +55,25 @@ This is Blake Wolf's professional landing page hosted at https://blakewolf.me. T
 ## Current Status
 - The home page and about page have been customized with Blake's professional information
 - Both pages use the same content and portrait image
-- Demo blog posts and projects are still present
+- Demo blog posts and projects have been removed
+- Automated GitHub projects system implemented with daily updates
+- Projects page automatically displays GitHub repos with About sections
 - Contact page has been updated to display email, GitHub, and LinkedIn links (no form)
 - Pagination has been removed from the site
 - Critical Sass deprecation warnings have been resolved (color functions, math operations)
 - Remaining @import deprecation warnings are intentionally left in place for Jekyll theme compatibility
 - Substack blog link added to main navigation and social icons (https://cryptidmegalodon1.substack.com/)
 
+## Automated Projects System
+- **GitHub Actions Workflow**: `.github/workflows/update-projects.yml` runs daily at 6 AM UTC
+- **Data Source**: Fetches all public repos from cryptid-megalodon GitHub account
+- **Filtering**: Only includes repositories with populated About/description sections
+- **Output**: Creates `_data/github_projects.yml` with alphabetized project list
+- **Display**: `/projects/` page automatically renders bulleted list with repo names, descriptions, and GitHub links
+- **Manual Trigger**: Workflow can be manually triggered via GitHub Actions interface
+
 ## Future Considerations
-- Remove or replace demo blog posts and projects with real content
-- Add real projects to showcase
+- Consider adding solar farm project as a manual entry since it may not have a GitHub repo
 - Consider differentiating home and about pages or removing redundancy
 - Consider adding recent blog posts about machine learning journey
 
