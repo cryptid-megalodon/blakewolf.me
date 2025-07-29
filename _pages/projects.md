@@ -6,8 +6,6 @@ layout: page
 
 # My Projects
 
-Below is an automatically updated list of my GitHub projects that have descriptions. Each project links to its GitHub repository where you can find detailed README files and source code.
-
 {% if site.data.github_projects %}
 <ul>
 {% for project in site.data.github_projects.projects %}
