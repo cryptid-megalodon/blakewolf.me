@@ -1,0 +1,46 @@
+projects:
+- name: bGPT-compression-experiments
+  description: An independent research experiment that fine tunes a byte-based transformer
+    to predict bytes for compressed data.
+  url: https://github.com/cryptid-megalodon/bGPT-compression-experiments
+  language: Python
+  stars: 0
+  updated: '2025-07-22T23:10:27Z'
+- name: blakewolf.me
+  description: My professional landing page
+  url: https://github.com/cryptid-megalodon/blakewolf.me
+  language: SCSS
+  stars: 0
+  updated: '2025-07-29T20:28:11Z'
+- name: fact-finder-gpt
+  description: Chrome extension prototype of a tool to highlight assertions and potential
+    facts in any online article (as determined by the latest iteration of the gpt-3.5-turbo
+    model by OpenAI).
+  url: https://github.com/cryptid-megalodon/fact-finder-gpt
+  language: JavaScript
+  stars: 0
+  updated: '2024-04-18T15:37:15Z'
+- name: page-shark
+  description: 'Chrome extension prototype of an AI assistant tool that offers several
+    tools for better understanding the content of a web page including: summary and
+    interactive Question & AI answer tool.'
+  url: https://github.com/cryptid-megalodon/page-shark
+  language: JavaScript
+  stars: 0
+  updated: '2024-04-18T19:10:02Z'
+- name: prediction-trader
+  description: An LLM pipeline for assessing prediction markets.
+  url: https://github.com/cryptid-megalodon/prediction-trader
+  language: Jupyter Notebook
+  stars: 0
+  updated: '2025-07-14T20:37:37Z'
+- name: spirit-snap
+  description: Spirit Snap is a non-traditional trading card game that allows players
+    to turn any physical object into a playable trading card. Players use their phone
+    camera to capture images of any object. A generative AI pipeline combines image
+    understanding, player context, and gameplay lore to create a unique spirit card.
+  url: https://github.com/cryptid-megalodon/spirit-snap
+  language: Go
+  stars: 0
+  updated: '2025-07-29T18:42:07Z'
+last_updated: '2025-07-29T20:28:36.558111'
