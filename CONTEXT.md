@@ -26,42 +26,22 @@ This is Blake Wolf's professional landing page hosted at https://blakewolf.me. T
 
 ## Site Structure
 - `/` - Home/landing page with about content (index.md)
-- `/projects/` - Portfolio/projects showcase
-- `/contact` - Contact form page
-- `/blog/` - Blog posts section (pagination enabled)
+- `/projects/` - Automatically generated project portfolio from GitHub repos.
+- `/contact` - Contact page with direct links (no form)
+- `/blog/` - Link out to Substack blog (https://cryptidmegalodon1.substack.com/)
 
 ## Key Files
 - `_config.yml` - Main Jekyll configuration
 - `_data/settings.yml` - Site settings (colors, fonts, menus, social links)
 - `index.md` - Home page with Blake's professional information
-- `_pages/` - Static pages (about.md, contact.md, thanks.md)
-- `_posts/` - Blog posts (currently has demo content)
-- `_projects/` - Project portfolio items (currently has demo content)
-- `_layouts/page.html` - Page layout template (fixed to use {{ content }} instead of {{ page.content }})
-
-## Recent Changes
-- Upgraded Jekyll from 3.8.5 to 4.3.4 for Ruby 3.2 compatibility
-- Renamed index.html to index.md to enable Markdown processing
-- Fixed page layout template to properly render Markdown content
-- Updated about page and home page with Blake's portrait image
-- Both home and about pages now display identical professional content
-- Menu updated to show "About" instead of "Latest" for the home page
-- Removed pagination configuration and jekyll-paginate plugin
-- Contact page replaced form with direct contact links (email, GitHub, LinkedIn)
-- Removed unused contact form dependencies (includes, CSS, JavaScript, settings)
-- Fixed critical Sass deprecation warnings (color functions and math operations)
-- Added Substack link to navigation menu and social icons
+- `_pages/` - Static pages (projects.md, contact.md)
+- `_layouts/page.html` - Page layout template
 
 ## Current Status
-- The home page and about page have been customized with Blake's professional information
-- Both pages use the same content and portrait image
-- Demo blog posts and projects have been removed
 - Automated GitHub projects system implemented with daily updates
 - Projects page automatically displays GitHub repos with About sections
-- Contact page has been updated to display email, GitHub, and LinkedIn links (no form)
+- Contact page has been updated to display email, GitHub, and LinkedIn links
 - Pagination has been removed from the site
-- Critical Sass deprecation warnings have been resolved (color functions, math operations)
-- Remaining @import deprecation warnings are intentionally left in place for Jekyll theme compatibility
 - Substack blog link added to main navigation and social icons (https://cryptidmegalodon1.substack.com/)
 
 ## Automated Projects System
@@ -76,17 +56,10 @@ This is Blake Wolf's professional landing page hosted at https://blakewolf.me. T
 
 ## Future Considerations
 - Consider adding solar farm project as a manual entry since it may not have a GitHub repo
-- Consider differentiating home and about pages or removing redundancy
-- Consider adding recent blog posts about machine learning journey
 
 ## Technical Notes
 
 ### Sass Deprecation Warnings
-**Fixed (Critical):**
-- Replaced `adjust-hue()` with `color.adjust()` using proper `$hue: 15deg` syntax
-- Replaced slash division (`/`) with `math.div()` function
-- Added `@use "sass:color"` and `@use "sass:math"` modules
-
 **Remaining (@import warnings):**
 The remaining 12 @import deprecation warnings are intentionally left in place because:
 - Jekyll themes with templating variables require global variable scoping
