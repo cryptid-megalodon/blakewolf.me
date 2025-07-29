@@ -9,9 +9,11 @@ layout: page
 Below is an automatically updated list of my GitHub projects that have descriptions. Each project links to its GitHub repository where you can find detailed README files and source code.
 
 {% if site.data.github_projects %}
+<ul>
 {% for project in site.data.github_projects.projects %}
-* **[{{ project.name }}]({{ project.url }})** - {{ project.description }}{% if project.language %} *({{ project.language }})*{% endif %}
+  <li><strong><a href="{{ project.url }}">{{ project.name }}</a></strong> - {{ project.description }}{% if project.language %} <em>({{ project.language }})</em>{% endif %}</li>
 {% endfor %}
+</ul>
 
 ---
 
