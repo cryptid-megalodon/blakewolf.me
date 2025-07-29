@@ -46,16 +46,16 @@ This is Blake Wolf's professional landing page hosted at https://blakewolf.me. T
 - Updated about page and home page with Blake's portrait image
 - Both home and about pages now display identical professional content
 - Menu updated to show "About" instead of "Latest" for the home page
+- Removed pagination configuration and jekyll-paginate plugin
 
 ## Current Status
 - The home page and about page have been customized with Blake's professional information
 - Both pages use the same content and portrait image
 - Demo blog posts and projects are still present
 - Contact form is configured but form action is empty
-- Jekyll pagination is configured for blog posts
+- Pagination has been removed from the site
 
 ## Future Considerations
-- Remove pagination configuration. It's not needed since there are no blog posts.
 - Add link to substack for blog posts.
 - Remove or replace demo blog posts and projects with real content
 - Configure contact form with proper form handler
