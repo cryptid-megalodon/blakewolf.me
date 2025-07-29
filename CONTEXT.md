@@ -48,6 +48,8 @@ This is Blake Wolf's professional landing page hosted at https://blakewolf.me. T
 - Menu updated to show "About" instead of "Latest" for the home page
 - Removed pagination configuration and jekyll-paginate plugin
 - Contact page replaced form with direct contact links (email, GitHub, LinkedIn)
+- Removed unused contact form dependencies (includes, CSS, JavaScript, settings)
+- Fixed critical Sass deprecation warnings (color functions and math operations)
 
 ## Current Status
 - The home page and about page have been customized with Blake's professional information
@@ -55,6 +57,8 @@ This is Blake Wolf's professional landing page hosted at https://blakewolf.me. T
 - Demo blog posts and projects are still present
 - Contact page has been updated to display email, GitHub, and LinkedIn links (no form)
 - Pagination has been removed from the site
+- Critical Sass deprecation warnings have been resolved (color functions, math operations)
+- Remaining @import deprecation warnings are intentionally left in place for Jekyll theme compatibility
 
 ## Future Considerations
 - Add link to substack for blog posts.
@@ -62,4 +66,18 @@ This is Blake Wolf's professional landing page hosted at https://blakewolf.me. T
 - Add real projects to showcase
 - Consider differentiating home and about pages or removing redundancy
 - Consider adding recent blog posts about machine learning journey
-- Fix deprecated Sass warnings in theme stylesheets (optional)
+
+## Technical Notes
+
+### Sass Deprecation Warnings
+**Fixed (Critical):**
+- Replaced `adjust-hue()` with `color.adjust()` using proper `$hue: 15deg` syntax
+- Replaced slash division (`/`) with `math.div()` function
+- Added `@use "sass:color"` and `@use "sass:math"` modules
+
+**Remaining (@import warnings):**
+The remaining 12 @import deprecation warnings are intentionally left in place because:
+- Jekyll themes with templating variables require global variable scoping
+- Converting to @use would break variable access across partials due to different scoping rules
+- These are deprecation warnings (not errors) that won't break functionality until Dart Sass 3.0.0
+- Theme compatibility and stability take priority over eliminating non-critical warnings
