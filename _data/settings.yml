@@ -14,6 +14,8 @@ menu_settings:
       url: '/'
     - title: 'Projects'
       url: '/projects/'
+    - title: 'Resume (PDF)'
+      url: 'https://drive.google.com/file/d/1PD3cUcrBxizKrVZKV7G2ZEutWI7XLHGz/view?usp=sharing'
     - title: 'Blog (Substack)'
       url: 'https://substack.com/@cryptidmegalodon1'
     - title: 'Contact'
